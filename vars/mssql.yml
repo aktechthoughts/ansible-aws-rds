@@ -1,0 +1,26 @@
+
+---
+
+aws_region_id: eu-central-1
+aws_vpc_name: abhishek-vpc
+aws_persistent_subnets: subnet-05b34add441f6a132,subnet-035a10658fcfd9e29
+
+service: mssql
+env: test
+rds_param_group_family: sqlserver-ex-14.0
+
+rds_license_model: license-included 
+# Possible license model for mssql.
+# license-included  |  bring-your-own-license  |  general-public-license
+
+rds_db_instance_name: mssqltest
+rds_db_engine: sqlserver-ex
+rds_engine_version: "14.00.3281.6.v1"
+rds_instance_size: "20"
+rds_instance_type: "db.t2.micro"
+rds_username: mssql_admin
+rds_password: 1nsecure
+rds_publicly_accessible: True
+aws_sg_group_id: sg-030d4befe149a4ec8
+
+zone: eu-central-1a
